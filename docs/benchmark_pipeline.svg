@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="650" viewBox="0 0 1400 650">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f4f7fb"/><stop offset="1" stop-color="#e8eef5"/></linearGradient>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#64748b"/></marker>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="130%"><feDropShadow dx="0" dy="5" stdDeviation="6" flood-color="#0f172a" flood-opacity=".10"/></filter>
+  </defs>
+  <rect width="1400" height="650" rx="28" fill="url(#bg)"/>
+  <text x="700" y="66" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="31" font-weight="700" fill="#172b4d">HIGHWAY-ENV VEHICLE SAFETY BENCHMARK</text>
+  <text x="700" y="103" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="17" fill="#52657d">CPU-only evaluation pipeline · matched seeds · reproducible outputs</text>
+
+  <g filter="url(#shadow)">
+    <rect x="55" y="160" width="275" height="260" rx="18" fill="#ffffff"/>
+    <rect x="55" y="160" width="275" height="12" rx="6" fill="#4b7894"/>
+    <circle cx="92" cy="211" r="20" fill="#e4eff6"/><text x="92" y="218" text-anchor="middle" font-family="Arial" font-size="20" font-weight="700" fill="#315d78">1</text>
+    <text x="125" y="217" font-family="Arial" font-size="20" font-weight="700" fill="#1e344d">Calibration</text>
+    <text x="82" y="266" font-family="Arial" font-size="16" fill="#42566e">Baseline episodes</text>
+    <text x="82" y="295" font-family="Arial" font-size="16" fill="#42566e">Independent seeds</text>
+    <text x="82" y="324" font-family="Arial" font-size="16" fill="#42566e">One-step hazard labels</text>
+    <rect x="82" y="354" width="220" height="38" rx="9" fill="#edf3f7"/>
+    <text x="192" y="379" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#315d78">Offline training data</text>
+
+    <rect x="390" y="160" width="275" height="260" rx="18" fill="#ffffff"/>
+    <rect x="390" y="160" width="275" height="12" rx="6" fill="#7b6aa6"/>
+    <circle cx="427" cy="211" r="20" fill="#eeeaf5"/><text x="427" y="218" text-anchor="middle" font-family="Arial" font-size="20" font-weight="700" fill="#65538f">2</text>
+    <text x="460" y="217" font-family="Arial" font-size="20" font-weight="700" fill="#1e344d">Frozen memory</text>
+    <text x="417" y="266" font-family="Arial" font-size="16" fill="#42566e">21-dimensional features</text>
+    <text x="417" y="295" font-family="Arial" font-size="16" fill="#42566e">7-nearest-neighbor lookup</text>
+    <text x="417" y="324" font-family="Arial" font-size="16" fill="#42566e">No test-time updates</text>
+    <rect x="417" y="354" width="220" height="38" rx="9" fill="#f1eef7"/>
+    <text x="527" y="379" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#65538f">Held-out evaluation</text>
+
+    <rect x="725" y="160" width="275" height="260" rx="18" fill="#ffffff"/>
+    <rect x="725" y="160" width="275" height="12" rx="6" fill="#5c8a71"/>
+    <circle cx="762" cy="211" r="20" fill="#e8f1eb"/><text x="762" y="218" text-anchor="middle" font-family="Arial" font-size="20" font-weight="700" fill="#3f7054">3</text>
+    <text x="795" y="217" font-family="Arial" font-size="20" font-weight="700" fill="#1e344d">Controllers</text>
+    <text x="752" y="266" font-family="Arial" font-size="16" fill="#42566e">Baseline · TTC · RSS*</text>
+    <text x="752" y="295" font-family="Arial" font-size="16" fill="#42566e">CBF* · Memory · Hybrid</text>
+    <text x="752" y="324" font-family="Arial" font-size="16" fill="#42566e">Shared proposal policy</text>
+    <rect x="752" y="354" width="220" height="38" rx="9" fill="#edf4ef"/>
+    <text x="862" y="379" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#3f7054">Safety decision layer</text>
+
+    <rect x="1060" y="160" width="285" height="260" rx="18" fill="#ffffff"/>
+    <rect x="1060" y="160" width="285" height="12" rx="6" fill="#b17a4e"/>
+    <circle cx="1097" cy="211" r="20" fill="#f6eee7"/><text x="1097" y="218" text-anchor="middle" font-family="Arial" font-size="20" font-weight="700" fill="#95633e">4</text>
+    <text x="1130" y="217" font-family="Arial" font-size="20" font-weight="700" fill="#1e344d">Analysis</text>
+    <text x="1087" y="266" font-family="Arial" font-size="16" fill="#42566e">720 full-mode test episodes</text>
+    <text x="1087" y="295" font-family="Arial" font-size="16" fill="#42566e">12 plots + 2 panels</text>
+    <text x="1087" y="324" font-family="Arial" font-size="16" fill="#42566e">9 tables + quality checks</text>
+    <rect x="1087" y="354" width="230" height="38" rx="9" fill="#f7f0e9"/>
+    <text x="1202" y="379" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#95633e">CSV · PDF · SVG · LaTeX</text>
+  </g>
+
+  <g stroke="#64748b" stroke-width="3" fill="none" marker-end="url(#arrow)">
+    <path d="M340 290 H380"/><path d="M675 290 H715"/><path d="M1010 290 H1050"/>
+  </g>
+
+  <rect x="55" y="465" width="1290" height="125" rx="18" fill="#1e344d"/>
+  <text x="90" y="505" font-family="Arial" font-size="18" font-weight="700" fill="#ffffff">SCENARIO MATRIX</text>
+  <text x="90" y="540" font-family="Arial" font-size="16" fill="#dce7f1">3 traffic-density levels</text>
+  <text x="90" y="566" font-family="Arial" font-size="16" fill="#dce7f1">Low · Medium · High</text>
+  <path d="M430 488 V565" stroke="#52677e" stroke-width="2"/>
+  <text x="480" y="505" font-family="Arial" font-size="18" font-weight="700" fill="#ffffff">2 traffic behavior classes</text>
+  <text x="480" y="545" font-family="Arial" font-size="17" fill="#dce7f1">IDM  ×  Aggressive</text>
+  <path d="M840 488 V565" stroke="#52677e" stroke-width="2"/>
+  <text x="890" y="505" font-family="Arial" font-size="18" font-weight="700" fill="#ffffff">6 scenarios total</text>
+  <text x="890" y="545" font-family="Arial" font-size="17" fill="#dce7f1">Same highway-v0 map · 3 lanes</text>
+  <text x="890" y="570" font-family="Arial" font-size="14" fill="#b9c9d9">Schematic overview — not experimental output</text>
+</svg>
