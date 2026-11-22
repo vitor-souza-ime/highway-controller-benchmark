@@ -14,7 +14,7 @@
 
 This repository implements a controlled benchmark for comparing six lightweight, rule-based safety decision mechanisms in the `highway-v0` environment. The study focuses on the safety–mobility trade-off, intervention behavior, traffic-condition sensitivity, and per-decision CPU latency.
 
-The benchmark does **not** train deep reinforcement-learning policies. All six methods share the same efficiency-oriented action-proposal policy and the same conservative fallback action (`SLOWER`). The experiment therefore compares alternative safety layers around a common driving policy.
+The benchmark does **not** train deep reinforcement-learning policies. All six methods use the same efficiency-oriented action-proposal policy. The five safety-augmented methods may replace an unsafe proposal with the conservative `SLOWER` fallback, while Baseline executes the proposal unchanged. The experiment therefore compares alternative safety layers around a common driving policy.
 
 > **Hardware:** CPU only. No NVIDIA GPU, CUDA, or Google Colab is required.
 
